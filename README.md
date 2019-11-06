@@ -45,6 +45,7 @@ $command->group('video', function() {
       'Список разделов:'
       ."\n"
       .'/video coub - рандом coub видео'
+      ."\n"
       .'/video animem - рандом анимем видео'
     );
   })
