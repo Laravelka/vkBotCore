@@ -46,14 +46,6 @@ $cmd = new Command([
 	'start' => ['!', '^', '/']
 ]);
 ```
-> Группы
-
-```php
-$cmd->group('string', function() {
-	
-})->start('!');
-```
-
 
 #### Через callback
 ```php
