@@ -73,4 +73,23 @@ $cmd->group('video', function() {
 
 **P.S Глубина группы может быть бесконечной**
 
-Остальное потом
+## Работа с VKAPI
+
+```php
+use Engine\Libs\VkApi\Client;
+use Engine\Libs\VkApi\Enums\Language;
+
+$api = new Client(
+	SERVICE_KEY,
+	5.103,
+	Language::RUSSIAN
+);
+$response = $api->messages->send([
+	'peer_id' => 1,
+	'message' => 'Test',
+	'random_id' => rand(11111, 21302414)
+]);
+
+// или
+$user = $api->users->get(['user_ids' => 1]);
+```
