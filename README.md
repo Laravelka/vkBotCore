@@ -93,3 +93,16 @@ $response = $api->messages->send([
 // или
 $user = $api->users->get(['user_ids' => 1]);
 ```
+
+#### Отправка сообщений и файлов
+```php
+$message->send('Привет'); // ответ в текущий чат
+$message->send('Привет', [
+	'peer_id' => 1
+]); // ответ в другой чат
+
+$message->send(ROOT.'/files/img/test.jpg');
+$message->send(ROOT.'/files/img/test.jpg', [
+	'message' => 'lol kek cheburek'
+]);
+```
