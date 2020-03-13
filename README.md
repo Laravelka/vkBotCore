@@ -5,7 +5,7 @@ The core of the bot for callback api vk
 > Прописать нужные данные в index.php
 
 ## События
-> Пример событий лежит в **Bot/Events**
+> Пример событий лежит в [Links with title](https://github.com/Laravelka/vkBotCore/blob/master/Bot/Events/ "**Bot/Events**")
 
 #### Через класс
 ```php
@@ -20,7 +20,7 @@ $event->on('message_new', function($event, $request) {
 
 ## Команды
 
-> Подключение команд можно глянуть в **Bot\Events**, а пример комманд в **Bot/Commands**
+> Пример событий лежит в [Links with title](https://github.com/Laravelka/vkBotCore/blob/master/Bot/Events/ "**Bot/Events**") а пример комманд в > Пример событий лежит в [Links with title](https://github.com/Laravelka/vkBotCore/blob/master/Bot/Commands/ "**Bot/Commands**")
 
 #### Через класс
 > Бот ответит на Начать и старт
